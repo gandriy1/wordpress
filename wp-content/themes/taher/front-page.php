@@ -51,7 +51,7 @@ get_header();
                     data-splitout="none"
                     data-responsive_offset="on"
                     data-lasttriggerstate="reset">
-                    With over 20 years of experience, we can handle landscaping project of any complexity 
+                    With over 20 years of experience, we can handle landscaping projects of any complexity 
                 </div>
                 <div class="sfb tp-caption"
                     data-x="['left','left','left','left']" data-hoffset="['30','30','30','30']"
@@ -68,9 +68,8 @@ get_header();
                     data-start="2100"
                     data-splitin="none"
                     data-splitout="none"
-                    data-actions='[{"event":"click","action":"scrollbelow","offset":"20px"}]'
                     data-responsive="on">
-                    <a href="page-portfolio-grid-fullwidth.html" class="wprt-button rounded-3px">Our Services</a>
+                    <a href="<?php echo get_permalink( get_page_by_title( 'Services' ) )?>" class="wprt-button rounded-3px">Our Services</a>
                 </div>
                 <div class="sfb tp-caption"
                     data-x="['left','left','left','left']" data-hoffset="['260','280','280','270']"
@@ -87,9 +86,8 @@ get_header();
                     data-start="2200"
                     data-splitin="none"
                     data-splitout="none"
-                    data-actions='[{"event":"click","action":"scrollbelow","offset":"20px"}]'
                     data-responsive="on">
-                    <a href="page-contact.html" class="wprt-button outline rounded-3px">Get a Quote</a>
+                    <a href="<?php echo get_permalink( get_page_by_title( 'Contact Us' ) )?>" class="wprt-button rounded-3px">Get a Quote</a>
                 </div>
             </li>
             <!-- End Slide -->
@@ -153,9 +151,8 @@ get_header();
                     data-start="2100"
                     data-splitin="none"
                     data-splitout="none"
-                    data-actions='[{"event":"click","action":"scrollbelow","offset":"20px"}]'
                     data-responsive="on">
-                    <a href="page-contact.html" class="wprt-button rounded-3px">Contact Us</a>
+                    <a href="<?php echo get_permalink( get_page_by_title( 'Contact Us' ) )?>" class="wprt-button rounded-3px">Contact Us</a>
                 </div>
             </li>
             <!-- End Slide -->

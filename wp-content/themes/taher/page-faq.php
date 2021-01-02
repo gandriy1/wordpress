@@ -25,12 +25,12 @@ get_header();
                                         </div>
                                         <div class="wprt-spacer" data-desktop="50" data-mobi="30" data-smobi="30"></div>
 
-                                        <div class="wprt-toggle bg-white style-1">
+                                        <div class="wprt-toggle bg-white active style-1">
                                             <h3 class="toggle-title">What type of access is needed for work to be done?</h3>
                                             <div class="toggle-content">We ask for minimum 40 inches wide access to the work area so we can fit a small machine and wheelbarrows but do work in tighter spaces.</div>
                                         </div>
 
-                                        <div class="wprt-toggle bg-white active style-1">
+                                        <div class="wprt-toggle bg-white style-1">
                                             <h3 class="toggle-title">Do we need to let our neighbours know that we are planning to do landscaping or construction work?</h3>
                                             <div class="toggle-content">No, you are not required to to tell your neighbours about work being done on your property, but doesn’t hurt to let them know. We work during allowed work hours and are very friendly also professional.</div>
                                         </div>

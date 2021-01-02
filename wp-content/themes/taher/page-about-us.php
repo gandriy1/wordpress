@@ -42,8 +42,6 @@ get_header();
                                         <p class=" margin-bottom-25">Our team is able to handle landscaping projects of any complexity due to our expertise and civil engineering background. We offer complete design and build services for outdoor spaces. In addition, we specialize in transforming landscapes into extensions of your home. Out processional services include: Driveways, Patios, Decks, Fences, Retaining walls, Flagstone, Water features, Trellises, Pergolas,Irrigation, Lighting
                                         </p>
 
-                                        <a class="wprt-button small rounded-3px" href="#">GET A QOUTE</a>
-
                                         <div class="wprt-spacer" data-desktop="0" data-mobi="30" data-smobi="30"></div>
                                     </div><!-- /.col-md-6 -->
 

@@ -17,6 +17,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $wp_query->post->post_title; ?> - Taher Landscaping</title>
 	<?php wp_head(); ?>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SFDWV5J3S"></script>
+    <?php echo sh_var('sh_google_analytics'); ?>
 </head>
 
 
@@ -45,6 +49,7 @@
                         <span class="icons">
                             <a href="<?php echo sh_var('sh_facebook_link'); ?>" title="Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
                             <a href="<?php echo sh_var('sh_twitter_link'); ?>" title="Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                            <a href="<?php echo sh_var('sh_linkedin_link'); ?>" title="LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
                         </span>
                     </div>
                 </div><!-- /.top-bar-socials -->

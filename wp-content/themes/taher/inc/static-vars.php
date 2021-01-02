@@ -13,6 +13,15 @@ function sh_var($name) {
 		case 'sh_business_email': return 'taherlandscaping@yahoo.ca';
 		case 'sh_facebook_link': return 'https://facebook.com';
 		case 'sh_twitter_link': return 'https://twitter.com';
+		case 'sh_linkedin_link': return 'https://www.linkedin.com';	
+		case 'sh_google_analytics': return "
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-5SFDWV5J3S');
+			</script>
+		";
 		default: return '';
 	}
 }
