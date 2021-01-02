@@ -23,13 +23,13 @@
 define( 'DB_NAME', 'taher' );
 
 /** MySQL database username */
-define( 'DB_USER', 'taher_admin' );
+define( 'DB_USER', 'masterdbuser@pod1-mysqldbserver' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'Mehrd@dS1te' );
+define( 'DB_PASSWORD', '233151Guz' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'pod1-mysqldbserver.mysql.database.azure.com' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -78,6 +78,9 @@ $table_prefix = 'tr_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+
+define( 'WP_HOME', 'https://taher-landscaping.azurewebsites.net' );
+define( 'WP_SITEURL', 'https://taher-landscaping.azurewebsites.net' );
 
 /* That's all, stop editing! Happy publishing. */
 
