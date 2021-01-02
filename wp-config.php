@@ -13,26 +13,35 @@
  * * Database table prefix
  * * ABSPATH
  *
- * @link https://wordpress.org/support/article/editing-wp-config-php/
+ * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
 
+//Using environment variables for DB connection information
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'taher' );
+
+$connectstr_dbhost = getenv('DATABASE_HOST');
+$connectstr_dbname = getenv('DATABASE_NAME');
+$connectstr_dbusername = getenv('DATABASE_USERNAME');
+$connectstr_dbpassword = getenv('DATABASE_PASSWORD');
+
+
+define('DB_NAME', $connectstr_dbname);
 
 /** MySQL database username */
-define( 'DB_USER', 'masterdbuser@pod1-mysqldbserver' );
+define('DB_USER', $connectstr_dbusername);
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '233151Guz' );
+define('DB_PASSWORD',$connectstr_dbpassword);
 
 /** MySQL hostname */
-define( 'DB_HOST', 'pod1-mysqldbserver.mysql.database.azure.com' );
+define('DB_HOST', $connectstr_dbhost);
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -46,14 +55,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         ' e1_?I>2qz=:*O1Zy|*:G=1Yat^gF_-P;H3;S<Ayz0j!Go7:[bg&m~Im|Ym=:p1M' );
-define( 'SECURE_AUTH_KEY',  'PUGq?^4[&Tk1bS+SV_>-6KolX~V3-NAdWAE_TRbD1{ o)C^v5P/.u.g8lgH|i|9(' );
-define( 'LOGGED_IN_KEY',    '^NWN.(T,yy;y +l+ek.Bb1R{N3<de%a|_s@w!t;&: JLX;3;&.gx+ f#_bxuNpF!' );
-define( 'NONCE_KEY',        'Ep9tBC$Qf _`QrP)nQHu2<i~2&,`s?1qG%kH)],S9go}:7u<mCW7<Do,2=sWi<Vu' );
-define( 'AUTH_SALT',        '{bW*FM@+jA-V{W+~Va(BW2dJ%HFfP+a|gxd?s>1AGS60S2Ii5f7ho+)Uy{WYK/rm' );
-define( 'SECURE_AUTH_SALT', 'X *~xci&YnAr-&`s,K@I}1S=9d.ZLuJ%nP9Lw<gi6DE??QLEW636X`WL#_Mkij,h' );
-define( 'LOGGED_IN_SALT',   ':XQaq0fHn%at:wwvIzRceg]8K[-G*(K4&wgaAN?<a1i?*Roed@0L/Se6i,f++le>' );
-define( 'NONCE_SALT',       'h97!,[G50>>s>YFq?=%m+u[]m7#o`GMmmN^G5qqZQQ6@u)6Y%q#jZLS&m/Bp-dWK' );
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
@@ -73,21 +82,27 @@ $table_prefix = 'tr_';
  * in their development environments.
  *
  * For information on other constants that can be used for debugging,
- * visit the documentation.
+ * visit the Codex.
  *
- * @link https://wordpress.org/support/article/debugging-in-wordpress/
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define( 'WP_DEBUG', false );
 
-define( 'WP_HOME', 'https://taher-landscaping.azurewebsites.net' );
-define( 'WP_SITEURL', 'https://taher-landscaping.azurewebsites.net' );
+/* That's all, stop editing! Happy blogging. */
+/**https://codex.wordpress.org/Function_Reference/is_ssl */
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
+	$_SERVER['HTTPS'] = 'on';
 
-/* That's all, stop editing! Happy publishing. */
+//Relative URLs for swapping across app service deployment slots 
+define('WP_HOME', 'http://'. $_SERVER['HTTP_HOST']);
+define('WP_SITEURL', 'http://'. $_SERVER['HTTP_HOST']);
+define('WP_CONTENT_URL', '/wp-content');
+define('DOMAIN_CURRENT_SITE', $_SERVER['HTTP_HOST']);
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 }
-
+	
 /** Sets up WordPress vars and included files. */
-require_once ABSPATH . 'wp-settings.php';
+require_once(ABSPATH . 'wp-settings.php');
