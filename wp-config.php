@@ -93,11 +93,14 @@ define( 'WP_DEBUG', false );
 if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
 	$_SERVER['HTTPS'] = 'on';
 
+$server_host = ($_SERVER['HTTP_HOST'] == 'localhost') ? $_SERVER['HTTP_HOST'] .'/wordpress-staging' : $_SERVER['HTTP_HOST'];
+$wp_content_url = ($_SERVER['HTTP_HOST'] == 'localhost') ? '/wordpress-staging/wp-content' : '/wp-content';
+
 //Relative URLs for swapping across app service deployment slots 
-define('WP_HOME', 'http://'. $_SERVER['HTTP_HOST']);
-define('WP_SITEURL', 'http://'. $_SERVER['HTTP_HOST']);
-define('WP_CONTENT_URL', '/wp-content');
-define('DOMAIN_CURRENT_SITE', $_SERVER['HTTP_HOST']);
+define('WP_HOME', 'http://'. $server_host);
+define('WP_SITEURL', 'http://'. $server_host);
+define('WP_CONTENT_URL', $wp_content_url);
+define('DOMAIN_CURRENT_SITE', $server_host);
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
