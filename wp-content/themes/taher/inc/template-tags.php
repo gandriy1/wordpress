@@ -20,7 +20,7 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 	}
 }
 
-if ( ! function_exists( 'sh_get_menu_items' ) ) {
+if ( ! function_exists( 'sh_main_menu' ) ) {
 	function sh_main_menu($current_page_slag) {
 		$items_html = sh_get_main_menu_items($current_page_slag);
 

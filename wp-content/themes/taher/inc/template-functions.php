@@ -38,3 +38,9 @@ function sh_get_image_url($imageName) {
 }
 
 //error_log( "locations - " .json_encode($args));
+
+function sh_query_vars( $qvars ) {
+    $qvars[] = 'service';
+    return $qvars;
+}
+add_filter( 'query_vars', 'sh_query_vars' );

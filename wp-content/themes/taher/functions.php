@@ -21,7 +21,6 @@ if ( ! function_exists( 'taher_setup' ) ) :
 		register_nav_menus(
 			array(
 				'primary' => esc_html__( 'Primary', 'taher' ),
-				'services' => esc_html__( 'Services', 'taher' ),
 				'site-map' => esc_html__( 'Site Map', 'taher' )
 			)
 		);
