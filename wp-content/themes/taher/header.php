@@ -9,13 +9,14 @@
  * @package taher
  */
 
+$page_title = $wp_query->post ? $wp_query->post->post_title : 'Page Not Found';
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $wp_query->post->post_title; ?> - Taher Landscaping</title>
+    <title><?php echo $page_title; ?> - Taher Landscaping</title>
 	<?php wp_head(); ?>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -72,7 +73,7 @@
 
                 <div class="mobile-button"><span></span></div><!-- //mobile menu button -->
 
-				<?php echo sh_main_menu($wp_query->post->post_title); ?>
+				<?php echo sh_main_menu($page_title); ?>
             </div>
         </div><!-- /#site-header-inner -->
     </header><!-- /#site-header -->
@@ -86,7 +87,7 @@ if ( !is_front_page() && !is_home() ) :
 		<div id="featured-title-inner" class="container clearfix">
 			<div class="featured-title-inner-wrap">
 				<div class="featured-title-heading-wrap">
-					<h1 class="featured-title-heading"><?php echo $wp_query->post->post_title; ?></h1>
+					<h1 class="featured-title-heading"><?php echo $page_title; ?></h1>
 				</div>
 			</div>
 		</div>

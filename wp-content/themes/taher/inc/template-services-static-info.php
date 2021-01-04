@@ -69,34 +69,34 @@ $woodwork = new Service(
 
 $sodding = new Service(
     'Sodding & Planting',
-     'Our team can builds decks, fences, trellises, pergolas and any other type of custom woodwork. We build decks of any complexity for residential projects. Our woodworking division has all it takes to work with any material you select, either its a wood from local supplier, or exotic hardwoods ordered from other countries. Check out our gallery below for examples of our projects.', 
-    array("decks/decks2.jpg","fences/fences2.jpg","decks/decks3.jpg","fences/fence4.jpg","decks/decks7.jpg","decks/decks8.jpg"),
-    array("Decks","Fences","Pergolas","Trellises"),
-    array($faq[3],$faq[4],$faq[2])
+    'Grass sodding and plants for your gardens, backyard, and frontyard areas.', 
+    array("services/sodding.jpg"),
+    array("Grass","Gardens"),
+    array($faq[2],$faq[4],$faq[1])
 );
 
 $water_features = new Service(
     'Water Features',
-     'Our team can builds decks, fences, trellises, pergolas and any other type of custom woodwork. We build decks of any complexity for residential projects. Our woodworking division has all it takes to work with any material you select, either its a wood from local supplier, or exotic hardwoods ordered from other countries. Check out our gallery below for examples of our projects.', 
-    array("decks/decks2.jpg","fences/fences2.jpg","decks/decks3.jpg","fences/fence4.jpg","decks/decks7.jpg","decks/decks8.jpg"),
-    array("Decks","Fences","Pergolas","Trellises"),
-    array($faq[3],$faq[4],$faq[2])
+    'Various irrigation and decoration setups add style to your next landscaping project.', 
+    array("services/water-features.jpg"),
+    array("Fountains"),
+    array($faq[3],$faq[4],$faq[1])
 );
 
 $design = new Service(
     'Design',
-     'Our team can builds decks, fences, trellises, pergolas and any other type of custom woodwork. We build decks of any complexity for residential projects. Our woodworking division has all it takes to work with any material you select, either its a wood from local supplier, or exotic hardwoods ordered from other countries. Check out our gallery below for examples of our projects.', 
-    array("decks/decks2.jpg","fences/fences2.jpg","decks/decks3.jpg","fences/fence4.jpg","decks/decks7.jpg","decks/decks8.jpg"),
-    array("Decks","Fences","Pergolas","Trellises"),
-    array($faq[3],$faq[4],$faq[2])
+    'Upon request we provide consepts and layouts to refine landcaping projects to your taste.', 
+    array("services/design.jpg"),
+    array("Landscape Design"),
+    array($faq[1],$faq[4],$faq[2])
 );
 
 $lighting = new Service(
     'Outdoor Lighting',
-     'Our team can builds decks, fences, trellises, pergolas and any other type of custom woodwork. We build decks of any complexity for residential projects. Our woodworking division has all it takes to work with any material you select, either its a wood from local supplier, or exotic hardwoods ordered from other countries. Check out our gallery below for examples of our projects.', 
-    array("decks/decks2.jpg","fences/fences2.jpg","decks/decks3.jpg","fences/fence4.jpg","decks/decks7.jpg","decks/decks8.jpg"),
-    array("Decks","Fences","Pergolas","Trellises"),
-    array($faq[3],$faq[4],$faq[2])
+    'Lighting of driveways and gardens can bring up features of your yard in eyes of guests.', 
+    array("services/lighting.jpg"),
+    array("Lighting of Driveways"),
+    array($faq[1],$faq[3],$faq[2])
 );
 
 /* Setup */

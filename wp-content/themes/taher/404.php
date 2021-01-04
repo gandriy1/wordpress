@@ -1,60 +1,44 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
  * @package taher
- */
+*/
 
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<!-- Main Content -->
+<div id="main-content" class="site-main clearfix">
+    <div id="content-wrap">
+        <div id="site-content" class="site-content clearfix">
+            <div id="inner-content" class="inner-content-wrap">
+                <div class="page-content">
+                    <section class="wprt-section">
+                        <div class="wprt-spacer" data-desktop="100" data-mobi="60" data-smobi="60"></div>
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'taher' ); ?></h1>
-			</header><!-- .page-header -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="text-center margin-bottom-20">Seems like we cant find what you are looking for</h2>
+                                    <div class="wprt-lines style-2 custom-1">
+                                        <div class="line-1"></div>
+                                    </div>
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'taher' ); ?></p>
+                                    <div class="wprt-spacer" data-desktop="36" data-mobi="30" data-smobi="30"></div>
+                                </div><!-- /.col-md-12 -->
 
-					<?php
-					get_search_form();
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="100" data-mobi="60" data-smobi="60"></div>
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'taher' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$taher_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'taher' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$taher_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
 
 <?php
+get_sidebar();
 get_footer();
