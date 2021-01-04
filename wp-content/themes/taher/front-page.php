@@ -357,7 +357,7 @@ function get_service_link($service_key){
                                                 <img src="<?php echo sh_get_image_url('decks/decks2.jpg') ?>" alt="image" />
                                                 <figcaption>
                                                     <div>
-                                                        <h2><a target="_blank" href="page-project-detail.html">Woodworks</a></h2>
+                                                        <h2><a target="_blank" href="<?php echo get_service_link('woodwork') ?>">Woodworks</a></h2>
                                                     </div>
                                                 </figcaption>           
                                             </figure>
@@ -378,7 +378,7 @@ function get_service_link($service_key){
                                                 <img src="<?php echo sh_get_image_url('stonework/stonework2.jpg') ?>" alt="image" />
                                                 <figcaption>
                                                     <div>
-                                                        <h2><a target="_blank" href="page-project-detail.html">Stonework</a></h2>
+                                                        <h2><a target="_blank" href="<?php echo get_service_link('stonework') ?>">Stonework</a></h2>
                                                     </div>
                                                 </figcaption>           
                                             </figure>
@@ -399,7 +399,7 @@ function get_service_link($service_key){
                                                 <img src="<?php echo sh_get_image_url('fences/fences2.jpg') ?>" alt="image" />
                                                 <figcaption>
                                                     <div>
-                                                        <h2><a target="_blank" href="page-project-detail.html">Woodwork</a></h2>
+                                                        <h2><a target="_blank" href="<?php echo get_service_link('woodwork') ?>">Woodwork</a></h2>
                                                     </div>
                                                 </figcaption>           
                                             </figure>
@@ -420,7 +420,7 @@ function get_service_link($service_key){
                                                 <img src="<?php echo sh_get_image_url('decks/decks5.jpg') ?>" alt="image" />
                                                 <figcaption>
                                                     <div>
-                                                        <h2><a target="_blank" href="page-project-detail.html">Woodwork</a></h2>
+                                                        <h2><a target="_blank" href="<?php echo get_service_link('woodwork') ?>">Woodwork</a></h2>
                                                     </div>
                                                 </figcaption>           
                                             </figure>
@@ -441,7 +441,7 @@ function get_service_link($service_key){
                                                 <img src="<?php echo sh_get_image_url('stonework/stonework5.jpg') ?>" alt="image" />
                                                 <figcaption>
                                                     <div>
-                                                        <h2><a target="_blank" href="page-project-detail.html">Stonework</a></h2>
+                                                        <h2><a target="_blank" href="<?php echo get_service_link('stonework') ?>">Stonework</a></h2>
                                                     </div>
                                                 </figcaption>           
                                             </figure>
@@ -462,7 +462,7 @@ function get_service_link($service_key){
                                                 <img src="<?php echo sh_get_image_url('fences/fences4.jpg') ?>" alt="image" />
                                                 <figcaption>
                                                     <div>
-                                                        <h2><a target="_blank" href="page-project-detail.html">Woodwork</a></h2>
+                                                        <h2><a target="_blank" href="<?php echo get_service_link('woodwork') ?>">Woodwork</a></h2>
                                                     </div>
                                                 </figcaption>           
                                             </figure>
@@ -483,7 +483,7 @@ function get_service_link($service_key){
                                                 <img src="<?php echo sh_get_image_url('sodding-planting.jpg') ?>" alt="image" />
                                                 <figcaption>
                                                     <div>
-                                                        <h2><a target="_blank" href="page-project-detail.html">Sodding & Planting</a></h2>
+                                                        <h2><a target="_blank" href="<?php echo get_service_link('sodding') ?>">Sodding & Planting</a></h2>
                                                     </div>
                                                 </figcaption>           
                                             </figure>
@@ -504,7 +504,7 @@ function get_service_link($service_key){
                                                 <img src="<?php echo sh_get_image_url('decks/decks4.jpg') ?>" alt="image" />
                                                 <figcaption>
                                                     <div>
-                                                        <h2><a target="_blank" href="page-project-detail.html">Woodwork</a></h2>
+                                                        <h2><a target="_blank" href="<?php echo get_service_link('woodwork') ?>">Woodwork</a></h2>
                                                     </div>
                                                 </figcaption>           
                                             </figure>
