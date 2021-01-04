@@ -44,3 +44,35 @@ function sh_query_vars( $qvars ) {
     return $qvars;
 }
 add_filter( 'query_vars', 'sh_query_vars' );
+
+function sh_send_email_to_admin() {
+    $name = $_POST['sh_name'];
+    $email = $_POST['sh_email'];
+    $subject = 'Contact Us: ' .$_POST['sh_subject'];
+    $message = $_POST['sh_message'];
+	$admin_email = get_option('admin_email');
+
+	$body = 'Email from ' .$email .' with subject "' .$subject .'" : ' .$message;
+
+	wp_mail($admin_email, $subject, $body);
+
+	$redirect_link = add_query_arg('emailSent', true, get_permalink( get_page_by_title( 'Contact Us' ) ) );
+	wp_redirect( $redirect_link );
+	
+	exit;
+	//
+	//$_GET['custom'] = 'custom';
+
+	//echo $name;
+
+    /**
+     * At this point, $_GET/$_POST variable are available
+     *
+     * We can do our normal processing here
+     */ 
+
+    // Sanitize the POST field
+    // Generate email content
+    // Send to appropriate email
+}
+add_action( 'admin_post_nopriv_contact_us_form', 'sh_send_email_to_admin' );

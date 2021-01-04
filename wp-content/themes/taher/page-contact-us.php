@@ -4,9 +4,39 @@
 */
 
 get_header();
+
+$is_email_sent = isset($_GET['emailSent']);
+if($is_email_sent){
 ?>
+<div id="main-content" class="site-main clearfix">
+    <div id="content-wrap">
+        <div id="site-content" class="site-content clearfix">
+            <div id="inner-content" class="inner-content-wrap">
+                <div class="page-content">
+                    <section class="wprt-section">
+                        <div class="wprt-spacer" data-desktop="100" data-mobi="60" data-smobi="60"></div>
 
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="text-center margin-bottom-20">Hang Tight. We will get back to you shortly.</h2>
+                                    <div class="wprt-lines style-2 custom-1">
+                                        <div class="line-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="wprt-spacer" data-desktop="100" data-mobi="60" data-smobi="60"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php
+}
+else{
+?>
 <!-- Main Content -->
 <div id="main-content" class="site-main clearfix">
     <div id="content-wrap">
@@ -45,22 +75,23 @@ get_header();
                                 </div><!-- /.col-md-4 -->
 
                                 <div class="col-md-8">
-                                    <form class="wprt-contact-form" method="post" action="./includes/contact/contact-process.php">
+                                    <form class="wprt-contact-form" method="post" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
                                         <div class="inner">
                                             <div class="left-side">
                                                 <div class="input-wrap">
-                                                    <input type="text" value="" tabindex="1" placeholder="Name *" name="name" id="name" required>
+                                                    <input type="text" value="" tabindex="1" placeholder="Name *" name="sh_name" id="name" required>
                                                 </div>
                                                 <div class="input-wrap">
-                                                    <input type="email" value="" tabindex="2" placeholder="Email *" name="email" id="email" required>
+                                                    <input type="email" value="" tabindex="2" placeholder="Email *" name="sh_email" id="email" required>
                                                 </div>
                                                 <div class="input-wrap">
-                                                    <input type="text" value="" tabindex="4" placeholder="Subject " name="subject" id="subject">
+                                                    <input type="text" value="" tabindex="4" placeholder="Subject " name="sh_subject" id="subject">
                                                 </div>
                                                 <div class="message-wrap">
-                                                    <textarea class="" tabindex="5" placeholder="Message *" name="message" id="message" required></textarea>
+                                                    <textarea class="" tabindex="5" placeholder="Message *" name="sh_message" id="message" required></textarea>
                                                 </div>
                                                 <div class="send-wrap">
+                                                    <input type="hidden" name="action" value="contact_us_form">
                                                     <input type="submit" value="SEND MESSAGE" id="submit" name="submit" class="submit">
                                                 </div>
                                             </div>
@@ -80,7 +111,7 @@ get_header();
     </div>
 </div>
 
-
 <?php
+}
 get_sidebar();
 get_footer();
