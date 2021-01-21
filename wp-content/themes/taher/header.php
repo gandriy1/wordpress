@@ -39,7 +39,6 @@ $page_title = $wp_query->post ? $wp_query->post->post_title : 'Page Not Found';
             <div class="top-bar-inner-wrap">
                 <div class="top-bar-content">
                     <span id="top-bar-text">
-                        <i class="fa fa-map-marker"></i><?php echo sh_var('sh_business_address'); ?>
                         <i class="fa fa-phone"></i><?php echo sh_var('sh_business_phone'); ?>
                         <i class="fa fa-at"></i><?php echo sh_var('sh_business_email'); ?>
                     </span><!-- /#top-bar-text -->
@@ -48,9 +47,8 @@ $page_title = $wp_query->post ? $wp_query->post->post_title : 'Page Not Found';
                 <div class="top-bar-socials">
                     <div class="inner">
                         <span class="icons">
-                            <a href="<?php echo sh_var('sh_facebook_link'); ?>" title="Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            <a href="<?php echo sh_var('sh_instagram_link'); ?>" title="Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
                             <a href="<?php echo sh_var('sh_twitter_link'); ?>" title="Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                            <a href="<?php echo sh_var('sh_linkedin_link'); ?>" title="LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
                         </span>
                     </div>
                 </div><!-- /.top-bar-socials -->
@@ -66,7 +64,7 @@ $page_title = $wp_query->post ? $wp_query->post->post_title : 'Page Not Found';
                     <div id="site-logo-inner">
                         <a href="<?php echo esc_url( site_url( '/' )); ?>" title="Construction" rel="home" class="main-logo">
                             <img src="<?php echo sh_get_image_url('logo.png')?>" alt="Taher Landscaping" data-retina="<?php echo sh_get_image_url('logo.png')?>" 
-							data-width="204" data-height="30" style="height: 45px;width: 150px;">
+							data-width="204" data-height="30" style="height: 50px;width: 150px;">
                         </a>
                     </div>
                 </div><!-- /#site-logo -->

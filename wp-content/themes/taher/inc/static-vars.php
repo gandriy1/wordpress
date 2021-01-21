@@ -14,6 +14,7 @@ function sh_var($name) {
 		case 'sh_facebook_link': return 'https://facebook.com';
 		case 'sh_twitter_link': return 'https://twitter.com';
 		case 'sh_linkedin_link': return 'https://www.linkedin.com';	
+		case 'sh_instagram_link': return 'https://www.instagram.com';	
 		case 'sh_google_analytics': return "
 			<script>
 			window.dataLayer = window.dataLayer || [];

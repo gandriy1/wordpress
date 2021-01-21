@@ -270,7 +270,7 @@ function get_service_link($service_key){
                     </section>
 
                     <!-- FACTS -->
-                    <section class="wprt-section about-page parallax">
+                    <section class="wprt-section parallax">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -279,7 +279,7 @@ function get_service_link($service_key){
 
                                 <div class="col-md-3">
                                     <div class="wprt-counter text-center accent-type">
-                                        <img src="<?php echo sh_get_image_url('homestars.jpg') ?>" alt="image">
+                                        <img src="<?php echo sh_get_image_url('homestars.png') ?>" alt="image">
                                     </div>
                                     <div class="wprt-spacer" data-desktop="0" data-mobi="30" data-smobi="30"></div>
                                 </div><!-- /.col-md-3 -->
@@ -301,7 +301,7 @@ function get_service_link($service_key){
 
                                 <div class="col-md-3">
                                     <div class="wprt-counter text-center accent-type">
-                                        <img src="<?php echo sh_get_image_url('wsib.jpg') ?>" alt="image">
+                                        <img src="<?php echo sh_get_image_url('wsib.png') ?>" alt="image">
                                     </div>
                                 </div><!-- /.col-md-3 -->
 

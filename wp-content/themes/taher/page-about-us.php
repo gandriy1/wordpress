@@ -14,14 +14,17 @@ get_header();
                 <div class="page-content">
                     <!-- GALLERY -->
                     <section class="wprt-section">
-                        <div class="container">
+                    <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="wprt-spacer" data-desktop="100" data-mobi="40" data-smobi="40"></div>
-                                    <h2 class="text-center margin-bottom-20">OUR HISTORY</h2>
+
+                                    <h3 class="text-center margin-bottom-10">OUR HISTORY</h3>
                                     <div class="wprt-lines style-2 custom-1">
                                         <div class="line-1"></div>
                                     </div>
+
+                                    <div class="wprt-spacer" data-desktop="50" data-mobi="30" data-smobi="30"></div>
 
 
                                     <p class="wprt-subtitle">
@@ -32,11 +35,14 @@ get_header();
                                 </div><!-- /.col-md-12 -->
 
                                 <div class="col-md-12">
+                                    <div class="wprt-spacer" data-desktop="100" data-mobi="40" data-smobi="40"></div>
+
                                     <h3 class="text-center margin-bottom-10">WHY CHOOSE US</h3>
                                     <div class="wprt-lines style-2 custom-1">
                                         <div class="line-1"></div>
                                     </div>
-                                    <div class="wprt-spacer" data-desktop="36" data-mobi="30" data-smobi="30"></div>
+
+                                    <div class="wprt-spacer" data-desktop="50" data-mobi="30" data-smobi="30"></div>
 
                                     <div class="col-md-6">
                                         <p class=" margin-bottom-25">Our team is able to handle landscaping projects of any complexity due to our expertise and civil engineering background. We offer complete design and build services for outdoor spaces. In addition, we specialize in transforming landscapes into extensions of your home. Out processional services include: Driveways, Patios, Decks, Fences, Retaining walls, Flagstone, Water features, Trellises, Pergolas,Irrigation, Lighting
@@ -91,11 +97,18 @@ get_header();
                     </section>
 
                     <!-- FACTS -->
-                    <section class="wprt-section about-page parallax">
-                        <div class="container">
+                    <section class="wprt-section parallax">
+                    <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="wprt-spacer" data-desktop="120" data-mobi="60" data-smobi="60"></div>
+                                    <div class="wprt-spacer" data-desktop="100" data-mobi="40" data-smobi="40"></div>
+
+                                    <h3 class="text-center margin-bottom-10">OUR ADVANTAGES</h3>
+                                    <div class="wprt-lines style-2 custom-1">
+                                        <div class="line-1"></div>
+                                    </div>
+
+                                    <div class="wprt-spacer" data-desktop="50" data-mobi="30" data-smobi="30"></div>
                                 </div><!-- /.col-md-12 -->
 
                                 <div class="col-md-3">
@@ -143,10 +156,9 @@ get_header();
                                 <div class="col-md-12">
                                     <div class="wprt-spacer" data-desktop="100" data-mobi="40" data-smobi="40"></div>
 
-                                    <h2 class="margin-bottom-10">MEET OUR TEAM</h2>
-                                    <div class="wprt-lines style-1 custom-3">
+                                    <h3 class="text-center margin-bottom-10">OUR GUYS</h3>
+                                    <div class="wprt-lines style-2 custom-1">
                                         <div class="line-1"></div>
-                                        <div class="line-2"></div>
                                     </div>
 
                                     <div class="wprt-spacer" data-desktop="50" data-mobi="30" data-smobi="30"></div>
@@ -179,36 +191,6 @@ get_header();
                                                         <div class="texts">
                                                             <h4 class="name">Daryush</h4>
                                                             <div class="position">Owner</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cbp-item">
-                                                <div class="member">
-                                                    <div class="inner">
-                                                        <div class="image">
-                                                            <div class="inner">
-                                                                <img src="<?php echo sh_get_image_url('team/hossein.jpg') ?>" alt="image" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="texts">
-                                                            <h4 class="name">Hossein</h4>
-                                                            <div class="position">Construction Foreman</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cbp-item">
-                                                <div class="member">
-                                                    <div class="inner">
-                                                        <div class="image">
-                                                            <div class="inner">
-                                                                <img src="<?php echo sh_get_image_url('team/assad.jpg') ?>" alt="image" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="texts">
-                                                            <h4 class="name">Assad</h4>
-                                                            <div class="position">Construction Assistant</div>
                                                         </div>
                                                     </div>
                                                 </div>
